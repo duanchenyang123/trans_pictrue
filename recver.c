@@ -60,7 +60,7 @@ void child_do(int fd) {
         }
         cnt++;
         size_t write_size = 0;
-        if (packet.size - size >= packet_size) {
+        if (packet.size - size >= sizeof(packet.buf)) {
             write_size = fwrite(packet.buf, 1, sizeof(packet.buf), fp);
         } else {
             write_size = fwrite(packet.buf, 1, packet.size - size, fp);
