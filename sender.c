@@ -6,7 +6,7 @@
  ************************************************************************/
 
 #include "./common/tcp_client.h"
-#include "./common/common.h"
+//#include "./common/common.h"
 #include "./common/head.h"
 
 struct FileMsg {
